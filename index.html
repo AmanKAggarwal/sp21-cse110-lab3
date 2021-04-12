@@ -16,6 +16,7 @@
             <li><a href="#two-days-ago-entry">Two days ago</a></li>
             <li><a href="#yesterday-entry">One day ago</a></li>
             <li><a href="#today-entry">Today</a></li>
+            <li><a href="#add-entry">Add entry</a></li>
         </ol>
     </nav>
 </header>
@@ -95,7 +96,7 @@
         <div>
             <h3>Interesting Picture</h3>
             <figure>
-                <img src="attachments/Yesterday/friends.png" alt="Image with friends" width="700px">
+                <img src="attachments/Yesterday/friends.png" alt="Image with friends" width="700">
                 <figcaption>Me with my friends in Los Angeles</figcaption>
             </figure>
         </div>
@@ -112,7 +113,7 @@
         <div>
             <h3>Favorite Video of the day</h3>
             <figure>
-                <video controls src="/Lab2/attachments/Yesterday/GCSunset.mov" width="1000px">Sorry, your browser does not support the <code>video</code> element.</video>                
+                <video controls src="/Lab2/attachments/Yesterday/GCSunset.mov" width="1000">Sorry, your browser does not support the <code>video</code> element.</video>                
                 <figcaption>Sunset at the Grand Canyon</figcaption>
             </figure>
             
@@ -148,7 +149,7 @@
         <div>
             <h3>Interesting Picture</h3>
             <figure>
-                <img src="attachments/Today/me_lab.png" alt="Image with friends" width="700px">
+                <img src="attachments/Today/me_lab.png" alt="Image with friends" width="700">
                 <figcaption>Me working on the lab :)</figcaption>
             </figure>
         </div>
@@ -168,12 +169,11 @@
     
     <section id="add-entry">
         <h2>Add an entry</h2>
-        <form action="" method="get" class="add-entry-form">
+        <form action="NON-EMPTY" method="get" class="add-entry-form">
             <fieldset>
                 <div>
-                    <label for="start"><b>Entry date:</b></label>
-                    <input type="date" id = "entry-date" name="entry-date"
-                        value="yyyy-mm-dd" required>
+                    <label for="entry-date"><b>Entry date:</b></label>
+                    <input type="date" id = "entry-date" name="entry-date" required>
                 </div>
                 <br>
                 <div>
@@ -220,30 +220,30 @@
             </fieldset>
 
             <fieldset class="highlights-form">
-                <label for="highlight"><h4>Add your highlights</h4></label>
+                <label for="highlight">Add your highlights</label>
                 <input type="text" name="highlight" id="highlight-text">
             </fieldset>
 
             <fieldset class="lowlights-form">
-                <label for="lowlight"><h4>Add your lowlights</h4></label>
+                <label for="lowlight">Add your lowlights</label>
                 <input type="text" name="lowlight" id="lowlight-text">
             </fieldset>
 
             <fieldset>
-                <label for="random-thoughts"><h4>Enter your random thoughts</h4></label>
+                <label for="random-thoughts">Enter your random thoughts</label>
                 <textarea id="random-thoughts" name="random-thoughts"
                         rows="5" cols="33">
                 </textarea>
             </fieldset>
             
             <fieldset>
-                <label for="lowlight"><h4>Did you enjoy your experience with the journal?</h4></label>
+                <label for="lowlight">Did you enjoy your experience with the journal?</label>
                 <div>
-                    <input type="radio" name="feedback" value="yes">
+                    <input type="radio" id="yes" name="feedback" value="yes">
                     <label for="yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" name="feedback" value="no">
+                    <input type="radio" id="no" name="feedback" value="no">
                     <label for="no">No</label>
                 </div>
             </fieldset>
