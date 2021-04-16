@@ -2,7 +2,7 @@
 name: Track Issues
 about: Keep track of your tasks for this project
 title: ''
-labels: ''
+labels: group-issue
 assignees: ''
 
 ---
