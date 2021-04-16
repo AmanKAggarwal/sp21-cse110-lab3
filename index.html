@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journaling Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/ico" href="attachments/favicon.ico">
+
+    <style>
+        .media {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Three Day Bullet Journal</h1>
     <nav>
         <ol>
-            <li><a href="#two-days-ago-entry">Two days ago</a></li>
-            <li><a href="#yesterday-entry">One day ago</a></li>
-            <li><a href="#today-entry">Today</a></li>
-            <li><a href="#add-entry">Add entry</a></li>
+            <li class="logo"><a href="#"><span style="color: #8d8e92">ThreeDay</span>BulletJournal</a></li>
+            <li class="spacer item"></li>
+            <li class="item"><a href="#two-days-ago-entry">Two days ago</a></li>
+            <li class="item"><a href="#yesterday-entry">One day ago</a></li>
+            <li class="item"><a href="#today-entry">Today</a></li>
+            <li class="item"><a href="#add-entry">Add entry</a></li>
         </ol>
     </nav>
 </header>
 <hr>
 <main>
     <!-- Daily Journal Entry -->
-    <section id="two-days-ago-entry">
-        <h2>9 April, 2020 (2 Days ago)</h2>
-        <div>
+    <section id="two-days-ago-entry" class="daily-entry">
+        <h2 class="entry-heading">9 April, 2020 (2 Days ago)</h2>
+        <div class="entry-item">
             <h3>Highlights of the day</h3>
             <ol>
                 <li><details><summary>Watched the fourth episode of <b>The Falcon and the Winter Soldier</b></summary>
@@ -33,20 +43,20 @@
                 <li><details><summary>Ordered lunch from <b>Panera Bread</b></summary> - Ordered some hot soup and a sandwich. The hot soup was very relieving for my cough</details></li>
             </ol>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Lowlights of the day</h3>
             <ol>
                 <li><details><summary>Watched a film screening on <b>Soylent Green</b></summary>Good movie but its really scary to think about the future the way it presents.</details></li>
             </ol>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Tasks todo</h3>
             <ul>
                 <li>Complete <span class="course">CAT 3</span> Lecture Reflection</li>
                 <li>Complete <span class="course">CAT 3</span> Academic Integrity Agreement</li>
             </ul>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Random Thoughts</h3>
             <p>Suffering from a <strong>bad cough</strong> so slept until noon. <br> Other than that it was a usual day with lectures and homeworks</p>
         </div>
@@ -64,9 +74,9 @@
     <hr>
 
     <!-- Daily Journal Entry -->
-    <section id="yesterday-entry">
-        <h2>10 April, 2020 (Yesterday)</h2>
-        <div>
+    <section id="yesterday-entry" class="daily-entry">
+        <h2 class="entry-heading">10 April, 2020 (Yesterday)</h2>
+        <div class="entry-item">
             <h3>Highlights of the day</h3>
             <ol>
                 <li><details><summary>Celeberated a friend's b'day</summary>It was amazing meeting some friends after 1 year</details></li>
@@ -74,27 +84,27 @@
                     I was really nervous about this quiz. Spend a good amount of my day studying for the quiz</details></li>
             </ol>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Lowlights of the day</h3>
             <ol>
                 <li><details><summary>Watched my favorite team <b>Mumbai Indians</b> loose their opening game in IPL (a cricket tournament)</summary>It was a close match but was really hoping Mumbai Indians would start with a blast</details></li>
             </ol>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Tasks todo</h3>
             <ul>
                 <li>Complete <span class="course">CSE 101</span> Quiz</li>
                 <li>Complete <span class="course">CSE 110</span> Lecture Quiz</li>
             </ul>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Random Thoughts</h3>
             <p>It was a fun day overall. Played a bunch of board and card games - <i>Catan</i>, <i>Coup</i>. Also <em>revisited</em> spring break memories from my trip to Grand Canyon and LA</p>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Interesting Picture</h3>
-            <figure>
-                <img src="attachments/Yesterday/friends.png" alt="Image with friends" width="700">
+            <figure class="media"> 
+                <img src="attachments/Yesterday/friends.png" alt="Image with friends">
                 <figcaption>Me with my friends in Los Angeles</figcaption>
             </figure>
         </div>
@@ -107,10 +117,10 @@
                     <code>audio</code> element.
             </audio>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Favorite Video of the day</h3>
-            <figure>
-                <video controls src="/Lab2/attachments/Yesterday/GCSunset.mov" width="1000">Sorry, your browser does not support the <code>video</code> element.</video>                
+            <figure class="media">
+                <video controls src="attachments/Yesterday/GCSunset.mov">Sorry, your browser does not support the <code>video</code> element.</video>                
                 <figcaption>Sunset at the Grand Canyon</figcaption>
             </figure>
             
@@ -120,33 +130,34 @@
     <hr>
     
     <!-- Daily Journal Entry -->
-    <section id="today-entry">
-        <h2>11 April, 2020 (Today)</h2>
-        <div>
+    <section id="today-entry" class="daily-entry">
+        <h2 class="entry-heading">11 April, 2020 (Today)</h2>
+        <div class="entry-item">
             <h3>Highlights of the day</h3>
             <ol>
                 <li><details><summary>Played Tennis</summary>Was kinda sore after playing but it was really fun</details></li>
                 <li><details><summary>Enjoyed making this HTML page</summary>Kinda scared because I generally do assignments way before they are due but this week I was sick :( <br>I am positive with my work now though!</details></li>
             </ol>
         </div>
-        <div>
+        <div class="entry-item lowlights">
             <h3>Lowlights of the day</h3>
-            None so far :)
+            <p> None so far :)</p>
+            <p>😄</p>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Tasks todo</h3>
             <ul>
                 <li>Complete <span class="course">CSE 110</span> Lab</li>
             </ul>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Random Thoughts</h3>
             <p>Mainly worked on the lab! Other than that I realised they give burgers in Sixth dining halls :). </p>
         </div>
-        <div>
+        <div class="entry-item">
             <h3>Interesting Picture</h3>
-            <figure>
-                <img src="attachments/Today/me_lab.png" alt="Image with friends" width="700">
+            <figure class="media">
+                <img src="attachments/Today/me_lab.png" alt="Image with friends">
                 <figcaption>Me working on the lab :)</figcaption>
             </figure>
         </div>
@@ -164,105 +175,119 @@
     <hr>
     
     <section id="add-entry">
-        <h2>Add an entry</h2>
+        <h2 class="entry-heading">Add an entry</h2>
         <form action="NON-EMPTY" method="get" class="add-entry-form">
-            <fieldset>
-                <div>
-                    <label for="entry-date"><b>Entry date:</b></label>
-                    <input type="date" id = "entry-date" name="entry-date" required>
-                </div>
-                <br>
-                <div>
-                    <b>Select the sections you want in your entry</b>
+            <div class="entry-form-item main">
+                <fieldset>
                     <div>
-                        <input type="checkbox" id="highlight" name="highlight">
-                        <label for="highlight">Highlights of the day</label>
+                        <label for="entry-date"><b>Entry date:</b></label>
+                        <input type="date" id = "entry-date" name="entry-date" required>
                     </div>
+                    <br>
                     <div>
-                        <input type="checkbox" id="lowlight" name="lowlight">
-                        <label for="lowlight">Lowlights of the day</label>
+                        <b>Select the sections you want in your entry</b>
+                        <div>
+                            <input type="checkbox" id="highlight" name="highlight">
+                            <label for="highlight">Highlights of the day</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="lowlight" name="lowlight">
+                            <label for="lowlight">Lowlights of the day</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tasks" name="tasks">
+                            <label for="tasks">Tasks for the day</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="random" name="random">
+                            <label for="random">Random Thoughts</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="picture" name="picture">
+                            <label for="picture">Interesting Picture</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="song" name="song">
+                            <label for="song">Song of the day</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="video" name="video">
+                            <label for="video">Video of the day</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="tasks" name="tasks">
-                        <label for="tasks">Tasks for the day</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="random" name="random">
-                        <label for="random">Random Thoughts</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="picture" name="picture">
-                        <label for="picture">Interesting Picture</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="song" name="song">
-                        <label for="song">Song of the day</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="video" name="video">
-                        <label for="video">Video of the day</label>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <h4>How was your day?</h4>
-                <select name="rate-day" id="rate-day">
-                    <option value="">--Please choose an option--</option>
-                    <option value="good">Good</option>
-                    <option value="average">Average</option>
-                    <option value="awful">Awful</option>
-                </select>
-            </fieldset>
-
-            <fieldset class="highlights-form">
-                <label for="highlight">Add your highlights</label>
-                <input type="text" name="highlight" id="highlight-text">
-            </fieldset>
-
-            <fieldset class="lowlights-form">
-                <label for="lowlight">Add your lowlights</label>
-                <input type="text" name="lowlight" id="lowlight-text">
-            </fieldset>
-
-            <fieldset>
-                <label for="random-thoughts">Enter your random thoughts</label>
-                <textarea id="random-thoughts" name="random-thoughts"
-                        rows="5" cols="33">
-                </textarea>
-            </fieldset>
+                </fieldset>
+            </div>
             
-            <fieldset>
-                <label for="lowlight">Did you enjoy your experience with the journal?</label>
-                <div>
-                    <input type="radio" id="yes" name="feedback" value="yes">
-                    <label for="yes">Yes</label>
-                </div>
-                <div>
-                    <input type="radio" id="no" name="feedback" value="no">
-                    <label for="no">No</label>
-                </div>
-            </fieldset>
+            <div class="entry-form-item rate-day">
+                <fieldset>
+                    <h4>How was your day?</h4>
+                    <select name="rate-day" id="rate-day">
+                        <option value="">--Please choose an option--</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="awful">Awful</option>
+                    </select>
+                </fieldset>
+            </div>
 
-            <fieldset>
-                <label for="journal-reach-choice">How did you learn about this journal?</label>
-                <input list="journal-reach-choices" id="journal-reach-choice" name="journal-reach-choice" />
+            <div class="entry-form-item highlights">
+                <fieldset class="highlights-form">
+                    <label for="highlight">Add your highlights</label>
+                    <input type="text" name="highlight" id="highlight-text" size="50">
+                </fieldset>
+            </div>
 
-                <datalist id="journal-reach-choices">
-                    <option value="Friend">
-                    <option value="Google">
-                    <option value="School Magazine">
-                    <option value="Personal Website">
-                    <option value="Facebook">
-                </datalist>
-            </fieldset>
+            <div class="entry-form-item lowlights">
+                <fieldset class="lowlights-form">
+                    <label for="lowlight">Add your lowlights</label>
+                    <input type="text" name="lowlight" id="lowlight-text" size="50">
+                </fieldset>
+            </div>
 
-            <div>
-                <button type="button">
-                    Submit Entry
-                </button>
+            <div class="entry-form-item random-thoughts">
+                <fieldset>
+                    <label for="random-thoughts">Enter your random thoughts</label>
+                    <textarea id="random-thoughts" name="random-thoughts"
+                            rows="10" cols="37">
+                    </textarea>
+                </fieldset>
+            </div>
+
+            <div class="entry-form-item feedback">
+                <fieldset>
+                    <label for="lowlight">Did you enjoy your experience with the journal?</label>
+                    <div>
+                        <input type="radio" id="yes" name="feedback" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no" name="feedback" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <div class="entry-form-item journal-reach">
+                <fieldset>
+                    <label for="journal-reach-choice">How did you learn about this journal?</label>
+                    <input list="journal-reach-choices" id="journal-reach-choice" name="journal-reach-choice" />
+    
+                    <datalist id="journal-reach-choices">
+                        <option value="Friend">
+                        <option value="Google">
+                        <option value="School Magazine">
+                        <option value="Personal Website">
+                        <option value="Facebook">
+                    </datalist>
+                </fieldset>
             </div>
         </form>
+
+        <div class="entry-form-item submit-btn">
+            <button type="button">
+                Submit Entry
+            </button>
+        </div>
     </section>
 </main>
 
