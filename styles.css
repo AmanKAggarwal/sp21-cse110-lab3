@@ -4,7 +4,7 @@
     
     --theme-color-2: black;
     --complement-color-2: white;
-    --middle-color-2: rgb(134, 134, 135);
+    --middle-color-2: hsl(240, 0, 53);
 }
 
 *{
@@ -32,7 +32,7 @@ img, video {
 div.random-tune > h3 {
     display: inline;
 }
-div.random-tune > h3 + audio { /*TODO: Add media query*/
+div.random-tune > h3 + audio {
     height: 1cm;
     display: inline;
     float: right;
@@ -93,6 +93,7 @@ div.random-tune > h3 + audio { /*TODO: Add media query*/
     color: #1823c4;
     font-weight: 2pt;
 }
+
 /* Navbar */
 
 nav {
